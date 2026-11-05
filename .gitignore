@@ -1,0 +1,8 @@
+# Generated native builds and local Python environment
+/build/
+/.venv/
+
+# Datasets, model bundles, generated jobs and full experiment evidence
+/data/
+/models/
+/artifacts/

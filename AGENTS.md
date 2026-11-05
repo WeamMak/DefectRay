@@ -2,7 +2,7 @@
 
 ## 1. Project and priorities
 
-Project: Distributed Inference Engine for Visual Inspection.
+Project: DefectRay — Distributed AI Visual Inspection Engine.
 
 Build a C++20/Linux system that distributes image inspection across workers,
 runs an ML model, and produces reviewable defect reports with recoverable job
@@ -39,6 +39,11 @@ Flag material document conflicts before making affected changes.
 
 Keep architecture and progress in their canonical documents, not duplicated here.
 Do not relax this working agreement without my explicit approval.
+
+Approval of an architecture direction is not approval of the written
+specification or implementation plan. Keep each approval gate explicit.
+The current approved scope, budget, protected measurement time, and stretch
+goals belong in docs/spec.md; do not restore previously removed scope by default.
 
 ## 3. Permission depends on the requested mode
 
@@ -88,8 +93,16 @@ Each task must have one independently verifiable outcome, clear dependencies,
 requirement references, scope exclusions, acceptance criteria, and verification
 commands. Split broad tasks; do not supply complete implementations in the plan.
 
+Include estimated hours per task and totals per milestone, accounting for
+learning, debugging, tests, review corrections, and documentation. Track actual
+time and preserve the contingency allocation in the approved specification.
+
 The first milestone prepares local development infrastructure, beginning with
 environment/toolchain verification. Cloud provisioning is not initial setup.
+Verify existing setup rather than repeating it. Git initialization performed
+before planning is a prerequisite, not completion or acceptance of T001.
+Select the project Python version only after checking compatibility across the
+chosen ML dependencies; the installed system Python is not an automatic choice.
 
 ## 5. Task state and acceptance
 
